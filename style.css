@@ -1,0 +1,30 @@
+
+/* I can write comments here 
+that are multilined 
+html selector 
+*/ 
+
+h1{
+	color:green;
+} 
+
+/*classes are another way in the door */ 
+.blogPost {
+	color: pink;
+	padding: 10px;
+	margin: 50px; 
+	background-color: black; 
+
+} 
+
+.blogPost p {
+	background-color: blue; 
+	padding: 10px; 
+} 
+
+/* IDs are the next level up */ 
+#navBar {
+	font-family: Verdana; 
+	font-size: 1.5em; 
+} 
+
