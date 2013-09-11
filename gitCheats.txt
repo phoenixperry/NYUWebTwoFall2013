@@ -116,7 +116,7 @@ git config -global user.email “your@email.com”
 
 To commit all of the tracked changes:
 
-git commit -a
+git commit -A
 
 
 To add new files, do so before committing:
