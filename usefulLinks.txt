@@ -1,0 +1,7 @@
+
+@media - reposnive design 
+https://developer.mozilla.org/en-
+US/docs/Web/Guide/CSS/Media_queries
+
+nice responsive grid 
+http://www.responsivegridsystem.com/
