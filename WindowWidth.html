@@ -1,0 +1,48 @@
+<html><head><title>Headache</title></head>
+  <script type="text/javascript">
+
+  setInterval(function(){alert("hello")},3000);
+    function init(){
+        //document.write(location.pathname);
+        //alert("make your users hate you!");
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+        var h  =window.innerHeight ||
+                document.documentElement.clientHeight ||
+                document.body.clientHeight;
+        x = document.getElementById("demo");
+        x.innerHTML = "browser inner width" +w + " height: "+h;
+
+      var box = document.getElementById("over");
+      // box.onmouseover = function(){
+      //   document.write("hi");
+      // }
+      var img = document.getElementById("pic");
+      img.onmouseover = function(){
+          img.src = "01.png";
+
+      };
+      img.onmouseout = function(){
+        img.src = "02.png";
+      };
+
+      img.addEventListener('click', enemyHit,false);
+    }
+    function enemyHit(event){
+      this.style.backgroundColor="#cc0000";
+      console.log("event captured ");
+      console.log(event);
+      window.location.assign("http://www.google.com");
+    }
+
+
+  </script>
+<body onload="init()">
+
+</body>
+  <p id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sapiente, consectetur eligendi eaque culpa eum odit tempore atque optio dolore a quibusdam necessitatibus vitae blanditiis dolor delectus quam vel fugiat.</p>
+
+
+  <p id="over">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, officia asperiores dolore delectus eum dicta dolorum blanditiis explicabo ullam obcaecati impedit deleniti cupiditate possimus totam iste. Ea asperiores id voluptas.</p>
+  <img id ="pic" src="02.png">
+</html>

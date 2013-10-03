@@ -1,0 +1,25 @@
+<html><head><title>Canvas101</title></head>
+  <script src="easel.js"></script>
+  <script type="text/javascript">
+  var g, circle;
+
+  function init(){
+    var canvas= document.getElementById("canvas");
+    var stage = new createjs.Stage(canvas);
+
+        circle = new createjs.Shape();
+      //note you can gang these properties together
+      //or seperate them like you are used to doing
+      circle.graphics.beginFill("red").drawCircle(50,50,50);
+      circle.x = 100;
+      circle.y = 100;
+      stage.addChild(circle);
+
+        stage.addChild(circle);
+
+  }
+  </script>
+  <body onload="init()">
+    <canvas width="700" height="500" id="canvas"></canvas>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<html><head><title>Javascript 101 </title>
+<script>
+
+  //create a game that has 10 turns and adds one to the player's location
+  //each time it runs.
+  var fred = new Character("fred", "male", 25);
+  console.log(fred.name_);
+  fred.run();
+
+  var jane = new Character("jane", "female", 28);
+  jane.run();
+  var cat =new Cat();
+
+
+  function Character(name_, gender, age){
+    this.name_ = name_;
+    this.gender = gender;
+    this.age = age;
+    this.run = run;
+  }
+
+  Cat.prototype.catRun= function(){
+    console.log("cat's runs");
+  }
+
+  fred.catRun();
+  cat.catRun();
+
+  function Cat(){
+    this.run= run;
+  }
+
+  function run(){
+    console.log("I ran!");
+
+  }
+
+  function init(){
+
+    for(var i=0; i < 10; i++)
+    {
+      if(i ==3){break;}
+      document.write(i);
+    }
+  }
+
+  var day = new Date().getDay();
+  switch(day){
+
+    case 0:
+    console.log("it's sunday");
+    break;
+
+    case 1:
+    console.log("it's mon");
+    break;
+    case 2:
+    console.log("it's tue");
+    break;
+    case 3:
+    console.log("it's wed");
+    break;
+    case 4:
+    console.log("it's thur");
+    break;
+    case 5:
+    console.log("it's fri");
+    break;
+    case 6:
+    console.log("it's sat");
+    break;
+    default:
+    console.log("this seriously weird");
+    break;
+
+  }
+</script>
+</head>m
+<body onload="init()">
+
+</body>
+
+</html>

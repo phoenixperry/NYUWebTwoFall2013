@@ -1,0 +1,82 @@
+<html><head>
+  <title>Flexie</title>
+  <style type="text/css">
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+
+
+
+/*
+    Legacy Firefox implementation treats all flex containers
+    as inline-block elements.
+*/
+
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+
+     <div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, sed, nam, quo, architecto praesentium vero accusamus fugit ad fugiat possimus suscipit id. Voluptate, commodi nisi autem ipsum numquam dicta nostrum.</div>
+     <div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quo, quibusdam, id, explicabo excepturi autem voluptas ducimus necessitatibus asperiores repudiandae itaque consectetur illum repellat voluptatum possimus quis nulla sapiente sunt.</div>
+     <div class="flex-item">lorem
+     </div>
+  </div>
+
+</body>
+</html>

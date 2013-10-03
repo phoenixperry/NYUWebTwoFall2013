@@ -6,5 +6,5 @@ US/docs/Web/Guide/CSS/Media_queries
 nice responsive grid
 http://www.responsivegridsystem.com/
 
-flexy boxes
+flexy box
 http://tinyurl.com/mlp4cpb
